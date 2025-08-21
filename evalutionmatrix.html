@@ -1,3 +1,102 @@
+<style>
+        .dropdown {
+            display: inline-block;
+            position: relative;
+            z-index: 9999;
+            /* Ensures it's above other elements */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 140px;
+            /* Adjusted width */
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 10000;
+            /* Higher z-index ensures it's on top */
+            text-align: left;
+            /* Align text to the left */
+            margin-top: -10px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 4px 6px;
+            /* Reduced padding */
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            /* Smaller font size */
+            height: 70px;
+            margin-top: -10px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-button {
+            text-decoration: underline;
+        }
+
+        .dropdown-button {
+            background-color: transparent;
+            border: none;
+            /* Ensure no border */
+            cursor: pointer;
+            font-size: inherit;
+            color: inherit;
+            outline: none;
+            /* Remove focus outline */
+        }
+
+        .dropdown-button:focus {
+            outline: none;
+            /* Remove outline when focused */
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 4px 6px;
+            /* Reduced padding */
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            /* Smaller font size */
+            height: 70px;
+            margin-top: -10px;
+            border: none;
+            /* Ensure no borders on the links */
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            outline: none;
+            /* Remove any outline */
+        }
+
+        @media screen and (max-width: fit-content) {
+            .site-title {
+                padding-right: 45px;
+            }
+        }
+
+        .site-header .wrapper {
+            display: flex;
+            align-items: center;
+            max-width: fit-content !important;
+        }
+
+        .site-header .wrapper .site-title img {
+            display: inline-block;
+            margin-right: 16px;
+        }
+    </style>
 <table>
   <thead>
     <tr>
@@ -22,36 +121,36 @@
     </tr>
     <tr>
       <td>Attendance</td>
-      <td>[ ]</td>
-      <td>0</td>
-      <td>0</td>
+      <td>[Y]</td>
+      <td>5</td>
+      <td>5</td>
       <td>0</td>
       <td>0.0</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td>Work Habits</td>
-      <td>[ ]</td>
-      <td>0</td>
-      <td>0</td>
+      <td>[Y]</td>
+      <td>5</td>
+      <td>5</td>
       <td>0</td>
       <td>0.0</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td>Behavior</td>
-      <td>[ ]</td>
-      <td>0</td>
-      <td>0</td>
+      <td>[N]</td>
+      <td>4</td>
+      <td>4</td>
       <td>0</td>
       <td>0.0</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td>Timeliness</td>
-      <td>[ ]</td>
-      <td>0</td>
-      <td>0</td>
+      <td>[Y]</td>
+      <td>5</td>
+      <td>5</td>
       <td>0</td>
       <td>0.0</td>
       <td>&nbsp;</td>
@@ -67,27 +166,27 @@
     </tr>
     <tr>
       <td>Tech/Cyber Sense</td>
-      <td>[ ]</td>
-      <td>0</td>
-      <td>0</td>
+      <td>[N]</td>
+      <td>4</td>
+      <td>3</td>
       <td>0</td>
       <td>0.0</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td>Tech/Cyber Talk</td>
-      <td>[ ]</td>
-      <td>0</td>
-      <td>0</td>
+      <td>[N]</td>
+      <td>5</td>
+      <td>4</td>
       <td>0</td>
       <td>0.0</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td>Tech Growth</td>
-      <td>[ ]</td>
-      <td>0</td>
-      <td>0</td>
+      <td>[Y]</td>
+      <td>5</td>
+      <td>3</td>
       <td>0</td>
       <td>0.0</td>
       <td>&nbsp;</td>
@@ -103,18 +202,18 @@
     </tr>
     <tr>
       <td>Advocacy</td>
-      <td>[ ]</td>
-      <td>0</td>
-      <td>0</td>
+      <td>[N]</td>
+      <td>4</td>
+      <td>4</td>
       <td>0</td>
       <td>0.0</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td>Communication &amp; Collab</td>
-      <td>[ ]</td>
-      <td>0</td>
-      <td>0</td>
+      <td>[Y]</td>
+      <td>5</td>
+      <td>5</td>
       <td>0</td>
       <td>0.0</td>
       <td>&nbsp;</td>
@@ -130,18 +229,18 @@
     </tr>
     <tr>
       <td>Integrity</td>
-      <td>[ ]</td>
-      <td>0</td>
-      <td>0</td>
+      <td>[N]</td>
+      <td>4</td>
+      <td>4</td>
       <td>0</td>
       <td>0.0</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td>Organization</td>
-      <td>[ ]</td>
-      <td>0</td>
-      <td>0</td>
+      <td>[Y]</td>
+      <td>5</td>
+      <td>4</td>
       <td>0</td>
       <td>0.0</td>
       <td>&nbsp;</td>
@@ -149,8 +248,8 @@
     <tr>
       <td><strong>📈 TOTALS</strong></td>
       <td>&nbsp;</td>
-      <td><strong>0</strong></td>
-      <td><strong>0</strong></td>
+      <td><strong>51</strong></td>
+      <td><strong>46</strong></td>
       <td><strong>0</strong></td>
       <td><strong>0.0</strong></td>
       <td>&nbsp;</td>
@@ -158,8 +257,8 @@
     <tr>
       <td><strong>🎯 AVERAGE SCORE</strong></td>
       <td>&nbsp;</td>
-      <td><strong>0.0</strong></td>
-      <td><strong>0.0</strong></td>
+      <td><strong>4.63</strong></td>
+      <td><strong>4.18</strong></td>
       <td><strong>0.0</strong></td>
       <td><strong>0.0</strong></td>
       <td>&nbsp;</td>
