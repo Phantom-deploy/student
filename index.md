@@ -1,12 +1,12 @@
 ---
 layout: base
-title: John Tab 
+title: Aryan Malik
 hide: true
 ---
 
 ### Me and Team
 
-Hi! My name is John.
+Hi! My name is Aryan.
 
 | Role         | Name     | Repo Location                       | Stream                | Repo Name |
 |--------------|----------|-------------------------------------|-----------------------|-----------|
@@ -33,6 +33,10 @@ Hi! My name is John.
 </a>
 <a href="https://vscode.dev/" class="button small" style="background-color: #d38a4bff">
     <span style="color: #FFFFFF">VSCODE</span>
+</a>
+
+<a href="https://docs.google.com/document/d/1__TrPOAikmimGUHIUgrc9Wu3F4InVuX7hocJR9BBfa8/edit?tab=t.0" class="button small" style="background-color: #d38a4bff">
+    <span style="color: #FFFFFF">Coding Notes</span>
 </a>
 
 <br>
