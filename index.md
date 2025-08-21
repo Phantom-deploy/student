@@ -39,7 +39,7 @@ Hi! My name is Aryan.
     <span style="color: #FFFFFF">Coding Notes</span>
 </a>
 
-<a href="[https://docs.google.com/document/d/1__TrPOAikmimGUHIUgrc9Wu3F4InVuX7hocJR9BBfa8/edit?tab=t.0](https://phantom-deploy.github.io/student/evalutionmatrix.html)" class="button small" style="background-color: #d38a4bff">
+<a href="https://phantom-deploy.github.io/student/evalutionmatrix.html" class="button small" style="background-color: #d38a4bff">
     <span style="color: #FFFFFF">Evalution Matrix</span>
 </a>
 
